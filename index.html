@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="YATRA — Discover unforgettable destinations, experiences and journeys from India to the world.">
+
+    <title>YATRA — Your Journey Begins Here</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="site-header">
+
+<nav id="navbar">
+
+    <a href="#" class="logo">
+        <span class="logo-icon">
+            <i class="fa-solid fa-compass"></i>
+        </span>
+        <span>YATRA</span>
+    </a>
+
+    <div class="nav-menu" id="navMenu">
+
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+        <a href="#packages" data-i18n="navPackages">Packages</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+
+    </div>
+
+    <div class="nav-actions">
+
+        <select id="language" aria-label="Select language">
+            <option value="en">🇬🇧 EN</option>
+            <option value="hi">🇮🇳 हिन्दी</option>
+            <option value="kn">🇮🇳 ಕನ್ನಡ</option>
+            <option value="gu">🇮🇳 ગુજરાતી</option>
+        </select>
+
+        <button id="darkBtn" class="icon-btn" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <a href="#contact" class="nav-book" data-i18n="bookNow">
+            Book Now
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-i18n="heroEyebrow">FROM INDIA TO THE WORLD</span>
+        </span>
+
+        <h1 id="heroTitle">
+            Your journey.<br>
+            <span>Our YATRA.</span>
+        </h1>
+
+        <p id="heroText">
+            Discover beautiful destinations, unforgettable experiences,
+            and journeys worth remembering.
+        </p>
+
+        <div class="search-box">
+
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                data-i18n-placeholder="searchPlaceholder"
+                placeholder="Search Goa, Kerala, Kashmir...">
+
+            <button id="searchBtn">
+                <span data-i18n="search">Search</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>50+</strong>
+                <span data-i18n="destinationsStat">Destinations</span>
+            </div>
+
+            <div>
+                <strong>10K+</strong>
+                <span data-i18n="travelersStat">Happy Travelers</span>
+            </div>
+
+            <div>
+                <strong>4.9</strong>
+                <span>★ <span data-i18n="ratingStat">Rating</span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        <span data-i18n="scroll">Scroll to explore</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+
+</section>
+
+</header>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section id="destinations" class="section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label" data-i18n="discoverLabel">
+                DISCOVER INDIA
+            </span>
+
+            <h2 data-i18n="destinationTitle">
+                Places worth <span>exploring.</span>
+            </h2>
+        </div>
+
+        <p data-i18n="destinationText">
+            From peaceful beaches to majestic mountains,
+            discover the places that make India unforgettable.
+        </p>
+
+    </div>
+
+
+    <div class="destination-grid">
+
+        <!-- Goa -->
+
+        <article class="destination-card large">
+
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200"
+                alt="Goa beach">
+
+            <div class="destination-gradient"></div>
+
+            <div class="destination-content">
+
+                <span>BEACH • INDIA</span>
+
+                <h3>Goa</h3>
+
+                <p data-i18n="goaText">
+                    Golden beaches, sunsets and endless adventures.
+                </p>
+
+                <button class="explore-btn map-btn"
+                    data-location="Goa, India">
+                    <span data-i18n="explore">Explore</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Kashmir -->
+
+        <article class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d1b0d4b7?w=900"
+                alt="Kashmir">
+
+            <div class="destination-gradient"></div>
+
+            <div class="destination-content">
+
+                <span>MOUNTAINS • INDIA</span>
+
+                <h3>Kashmir</h3>
+
+                <p data-i18n="kashmirText">
+                    Lakes, valleys and breathtaking Himalayan scenery.
+                </p>
+
+                <button class="explore-btn map-btn"
+                    data-location="Kashmir, India">
+                    <span data-i18n="explore">Explore</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Rajasthan -->
+
+        <article class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=900"
+                alt="Rajasthan">
+
+            <div class="destination-gradient"></div>
+
+            <div class="destination-content">
+
+                <span>HERITAGE • INDIA</span>
+
+                <h3>Rajasthan</h3>
+
+                <p data-i18n="rajasthanText">
+                    Royal forts, colorful streets and timeless culture.
+                </p>
+
+                <button class="explore-btn map-btn"
+                    data-location="Rajasthan, India">
+                    <span data-i18n="explore">Explore</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Kerala -->
+
+        <article class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900"
+                alt="Kerala">
+
+            <div class="destination-gradient"></div>
+
+            <div class="destination-content">
+
+                <span>NATURE • INDIA</span>
+
+                <h3>Kerala</h3>
+
+                <p data-i18n="keralaText">
+                    Calm backwaters, lush greenery and slow living.
+                </p>
+
+                <button class="explore-btn map-btn"
+                    data-location="Kerala, India">
+                    <span data-i18n="explore">Explore</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- Ladakh -->
+
+        <article class="destination-card">
+
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=900"
+                alt="Ladakh">
+
+            <div class="destination-gradient"></div>
+
+            <div class="destination-content">
+
+                <span>ADVENTURE • INDIA</span>
+
+                <h3>Ladakh</h3>
+
+                <p data-i18n="ladakhText">
+                    High mountain passes, monasteries and wild landscapes.
+                </p>
+
+                <button class="explore-btn map-btn"
+                    data-location="Ladakh, India">
+                    <span data-i18n="explore">Explore</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WORLD ================= -->
+
+<section class="world-section">
+
+    <div class="world-image"></div>
+
+    <div class="world-content">
+
+        <span class="section-label">THE WORLD AWAITS</span>
+
+        <h2 data-i18n="worldTitle">
+            India first.<br>
+            <span>The world next.</span>
+        </h2>
+
+        <p data-i18n="worldText">
+            Start your YATRA in India and discover experiences
+            around the globe. Your journey doesn't have borders.
+        </p>
+
+        <button class="primary-btn" onclick="showComingSoon()">
+            <span data-i18n="exploreWorld">Explore the World</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section id="packages" class="section">
+
+    <div class="section-heading centered">
+
+        <div>
+
+            <span class="section-label" data-i18n="packagesLabel">
+                CURATED JOURNEYS
+            </span>
+
+            <h2 data-i18n="packageTitle">
+                Travel made <span>simple.</span>
+            </h2>
+
+        </div>
+
+        <p data-i18n="packageText">
+            Carefully planned packages so you can focus
+            on making memories.
+        </p>
+
+    </div>
+
+
+    <div class="package-grid">
+
+        <article class="package-card">
+
+            <div class="package-image">
+
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1000"
+                    alt="Goa">
+
+                <span class="price">₹19,999</span>
+
+            </div>
+
+            <div class="package-body">
+
+                <div class="package-meta">
+                    <span><i class="fa-regular fa-clock"></i> 5 Days</span>
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                </div>
+
+                <h3>Goa Escape</h3>
+
+                <p data-i18n="goaPackage">
+                    Beaches, sunsets, local food and unforgettable nights.
+                </p>
+
+                <button class="package-btn"
+                    onclick="bookPackage('Goa Escape')">
+                    <span data-i18n="bookPackage">Book Package</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="package-card featured">
+
+            <span class="popular-badge" data-i18n="popular">
+                MOST POPULAR
+            </span>
+
+            <div class="package-image">
+
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1000"
+                    alt="Kerala">
+
+                <span class="price">₹29,999</span>
+
+            </div>
+
+            <div class="package-body">
+
+                <div class="package-meta">
+                    <span><i class="fa-regular fa-clock"></i> 6 Days</span>
+                    <span><i class="fa-solid fa-star"></i> 5.0</span>
+                </div>
+
+                <h3>Kerala Bliss</h3>
+
+                <p data-i18n="keralaPackage">
+                    Backwaters, greenery, beaches and peaceful escapes.
+                </p>
+
+                <button class="package-btn"
+                    onclick="bookPackage('Kerala Bliss')">
+                    <span data-i18n="bookPackage">Book Package</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="package-card">
+
+            <div class="package-image">
+
+                <img src="https://images.unsplash.com/photo-1595815771614-ade9d1b0d4b7?w=1000"
+                    alt="Kashmir">
+
+                <span class="price">₹34,999</span>
+
+            </div>
+
+            <div class="package-body">
+
+                <div class="package-meta">
+                    <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                </div>
+
+                <h3>Kashmir Dream</h3>
+
+                <p data-i18n="kashmirPackage">
+                    Lakes, mountains, valleys and unforgettable views.
+                </p>
+
+                <button class="package-btn"
+                    onclick="bookPackage('Kashmir Dream')">
+                    <span data-i18n="bookPackage">Book Package</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BUDGET ================= -->
+
+<section id="budget" class="budget-section">
+
+    <div class="budget-content">
+
+        <span class="section-label" data-i18n="plannerLabel">
+            PLAN SMARTER
+        </span>
+
+        <h2 data-i18n="budgetTitle">
+            Know your budget.<br>
+            <span>Enjoy your YATRA.</span>
+        </h2>
+
+        <p data-i18n="budgetText">
+            Estimate your trip expenses before you pack your bags.
+        </p>
+
+    </div>
+
+
+    <div class="budget-box">
+
+        <div class="input-group">
+
+            <label data-i18n="daysLabel">Number of Days</label>
+
+            <input
+                type="number"
+                id="days"
+                min="1"
+                placeholder="5">
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label data-i18n="hotelLabel">Hotel / Day</label>
+
+            <input
+                type="number"
+                id="hotel"
+                min="0"
+                placeholder="2500">
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label data-i18n="foodLabel">Food / Day</label>
+
+            <input
+                type="number"
+                id="food"
+                min="0"
+                placeholder="1000">
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label data-i18n="transportLabel">Transport</label>
+
+            <input
+                type="number"
+                id="transport"
+                min="0"
+                placeholder="5000">
+
+        </div>
+
+
+        <button id="calculateBtn" class="primary-btn">
+            <span data-i18n="calculate">Calculate Budget</span>
+            <i class="fa-solid fa-calculator"></i>
+        </button>
+
+
+        <div class="budget-result">
+
+            <span data-i18n="estimatedBudget">
+                Estimated Budget
+            </span>
+
+            <strong id="totalBudget">₹0</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="section">
+
+    <div class="section-heading centered">
+
+        <div>
+
+            <span class="section-label" data-i18n="galleryLabel">
+                MOMENTS
+            </span>
+
+            <h2 data-i18n="galleryTitle">
+                See the <span>journey.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000"
+                alt="Beach">
+            <span>Goa</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1000"
+                alt="Kerala">
+            <span>Kerala</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d1b0d4b7?w=1000"
+                alt="Kashmir">
+            <span>Kashmir</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1000"
+                alt="Rajasthan">
+            <span>Rajasthan</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1000"
+                alt="Ladakh">
+            <span>Ladakh</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1496372412473-e8548ffd82bc?w=1000"
+                alt="India travel">
+            <span>Incredible India</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="reviews-section">
+
+    <div class="section-heading centered">
+
+        <div>
+
+            <span class="section-label" data-i18n="reviewsLabel">
+                TRAVELER STORIES
+            </span>
+
+            <h2 data-i18n="reviewsTitle">
+                Loved by <span>travelers.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="review-grid">
+
+        <article class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p data-i18n="review1">
+                “YATRA made our Kerala trip incredibly easy.
+                Everything was beautifully planned.”
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">A</div>
+                <div>
+                    <strong>Praveen Kolar</strong>
+                    <span>Kerala Trip</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p data-i18n="review2">
+                “The Kashmir experience was unforgettable.
+                Great hotels and excellent support.”
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">P</div>
+                <div>
+                    <strong>Ranjit Patil</strong>
+                    <span>Kashmir Trip</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="review-card">
+
+            <div class="review-stars">★★★★★</div>
+
+            <p data-i18n="review3">
+                “Simple booking, beautiful destinations
+                and memories we will never forget.”
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">R</div>
+                <div>
+                    <strong>Prajwal Sarkar</strong>
+                    <span>Goa Trip</span>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <div class="contact-intro">
+
+            <span class="section-label" data-i18n="contactLabel">
+                LET'S TALK
+            </span>
+
+            <h2 data-i18n="contactTitle">
+                Ready for your<br>
+                <span>next YATRA?</span>
+            </h2>
+
+            <p data-i18n="contactText">
+                Tell us where you want to go and we'll help
+                you plan an unforgettable journey.
+            </p>
+
+
+            <div class="contact-details">
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Vadodara, Gujarat, India</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 9876543210</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>hello@yatra.com</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    id="name"
+                    data-i18n-placeholder="namePlaceholder"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    data-i18n-placeholder="emailPlaceholder"
+                    placeholder="Your Email"
+                    required>
+
+            </div>
+
+
+            <select id="interest">
+
+                <option value="" data-i18n="interestPlaceholder">
+                    What are you interested in?
+                </option>
+
+                <option>India Travel</option>
+                <option>International Travel</option>
+                <option>Tour Packages</option>
+                <option>Custom Trip</option>
+
+            </select>
+
+
+            <textarea
+                id="message"
+                data-i18n-placeholder="messagePlaceholder"
+                placeholder="Tell us about your dream trip..."
+                required></textarea>
+
+
+            <button type="submit" class="primary-btn">
+
+                <span data-i18n="sendMessage">
+                    Send Message
+                </span>
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+
+            <button type="button" id="whatsappBtn" class="whatsapp-btn">
+
+                <i class="fab fa-whatsapp"></i>
+
+                <span data-i18n="whatsapp">
+                    Chat on WhatsApp
+                </span>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-compass"></i>
+                </span>
+                YATRA
+            </a>
+
+            <p data-i18n="footerText">
+                Discover India. Experience the world.
+                Make every journey count.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4 data-i18n="quickLinks">Quick Links</h4>
+
+            <a href="#home" data-i18n="navHome">Home</a>
+            <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+            <a href="#packages" data-i18n="navPackages">Packages</a>
+            <a href="#gallery" data-i18n="navGallery">Gallery</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4 data-i18n="followUs">Follow Us</h4>
+
+            <div class="social">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 YATRA.
+            <span data-i18n="rights">All Rights Reserved.</span>
+        </p>
+
+        <p data-i18n="footerTagline">
+            Made for travelers, by travelers.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast" class="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Success!
+    </span>
+
+</div>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div id="lightbox" class="lightbox">
+
+    <button id="closeLightbox">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="lightboxImage" src="" alt="Travel image">
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
